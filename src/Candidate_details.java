@@ -43,7 +43,7 @@ class CandidateD
                 dobS = String.valueOf(dob);
                 if(dobS.charAt(0)==0 || dobS.length()==7)
                 {
-                        SDob=true;
+                    SDob=true;
                 }
                 else if(dobS.length() == 8 )
                 {
@@ -65,19 +65,19 @@ class CandidateD
             DD = dob / 1000000; //First 2 digits
             MM = (dob / 10000) % 100; //Middle 2 digits
             YYYY = dob % 10000; //Last 4 digits
-
-            if (DD > 0 && DD < 32)
+            
+            
+            if(YYYY<=2026 && ((YYYY%400==0)||(YYYY%4==0 && YYYY %100!=0)))
             {
-                if (MM > 0 && MM < 13)
+                if(MM > 0 && MM < 13)
                 {
-                    if (YYYY <= 2026)
+                    if (DD > 0 && DD < 30)
                     {
-                        born1 = true;
-                        return;
+                        born1=true;
                     }
                     else
                     {
-                        System.out.println("Invalid Year of Birth(YYYY).");
+                        System.out.println("Invalid Date of Birth(DD).");
                         System.out.println("Try Again...");
                         SDob = false;
                     }
@@ -89,15 +89,47 @@ class CandidateD
                     SDob = false;
                 }
             }
-            else
+            else if(YYYY>2026)
             {
-                System.out.println("Invalid Date of Birth(DD).");
+                System.out.println("Invalid Year of Birth(YYYY).");
                 System.out.println("Try Again...");
                 SDob = false;
             }
+            else
+            {
+                if(MM > 0 && MM < 13)
+                {
+                    if(MM==02 && DD<29)
+                    {
+                        born1=true;
+                        return;
+                    }
+
+                    if (DD > 0 && DD < 32 && (MM==01||MM==03||MM==05||MM==07||MM==8||MM==10||MM==12))
+                    {
+                        born1=true;
+                    }
+                    else if (DD > 0 && DD < 31 && (MM==04||MM==06||MM==9||MM==11))
+                    {
+                        born1=true;
+                    }
+                    else
+                    {
+                        System.out.println("Invalid Date of Birth(DD).");
+                        System.out.println("Try Again...");
+                        SDob = false;
+                    }
+                }
+                else
+                {
+                    System.out.println("Invalid Month of Birth(MM).");
+                    System.out.println("Try Again...");
+                    SDob = false;
+                }
+            }
         }
     }
-
+    
     void M_NO()
     {
         boolean b=false;
