@@ -54,6 +54,19 @@ A console-based Quiz Management System developed in Java using Object-Oriented P
 
 This project is suitable for beginners who want to understand Java fundamentals, object-oriented programming, and console application development through a real-world mini project.
 
+## 📷 Output Screens
+
+Here are some previews of the console application in action:
+
+| Screen Description | Output Preview |
+| :--- | :--- |
+| **Quiz Menu Selection** | ![Quiz Menu](Output%20View/Quiz%20Menu.png) |
+| **Login & Sign-Up Flow** | ![Candidate Login & Sign-Up](Output%20View/Candidate%20Login%20%26%20SignUp%20OutPut.png) |
+| **Login Attempt Validation** | ![Login Validation](Output%20View/Login%20Validation.png) |
+| **Mobile Number & DOB Validation** | ![Mobile & DOB Validation](Output%20View/Mobile%20Number%20%26%20DOB%20Validation%20for%20SignUp.png) |
+| **Subject Attempt Output** | ![Multiple Subject Attempt](Output%20View/Multiple%20Sub%20Attempt%20Output.png) |
+| **Final Results** | ![Results on Exit](Output%20View/Result%20while%20Exiting.png) |
+
 ## 📄 License
 
 This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
