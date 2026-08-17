@@ -1,6 +1,8 @@
-**CLI based `QUIZ GAME` using `JAVA - I` with Candidate Login and SignUp by Authentication.**
-
 # 🎯 Java Console-Based Quiz Management System
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+**CLI based `QUIZ GAME` using `JAVA - I` with Candidate Login and SignUp by Authentication.**
 
 A console-based Quiz Management System developed in Java using Object-Oriented Programming (OOP) concepts. The application allows candidates to register, log in securely, attempt quizzes from multiple subjects, and receive their scores automatically.
 
@@ -51,4 +53,10 @@ A console-based Quiz Management System developed in Java using Object-Oriented P
 * Console-Based Application Development
 
 This project is suitable for beginners who want to understand Java fundamentals, object-oriented programming, and console application development through a real-world mini project.
+
+## 📄 License
+
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
+
+Copyright © 2026 MR. ADITYA PARMAR. All rights reserved.
 
